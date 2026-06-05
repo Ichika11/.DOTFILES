@@ -1,17 +1,20 @@
 #!/bin/bash
 echo "restoring harman rice..."
 
-pkill -f ambxst
+pkill -f "src/ambxst"
 pkill quickshell
-sleep 1
+pkill axctl
+sleep 2
 
-
+cp ~/.config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf.bak
 cp -r ~/dotfiles/harman/hypr ~/.config/
 cp -r ~/dotfiles/harman/quickshell ~/.config/
 cp -r ~/dotfiles/harman/swaync ~/.config/
+sed -i '/source = ~\/.local\/share\/ambxst\/hyprland.conf/d' ~/.config/hypr/hyprland.conf
+sed -i '107,189s/^#bind/bind/; 107,189s/^#binde/binde/; 107,189s/^#bindm/bindm/' ~/.config/hypr/hyprland.conf
 hyprctl reload
 wal -R
+sleep 1
 quickshell &
 
 echo "done! harman restored"
-
