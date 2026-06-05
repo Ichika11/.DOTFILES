@@ -6,3 +6,8 @@ alias cat=bat
 export LS_COLORS="$(vivid generate molokai)"
 alias rice-vieg="bash ~/switch-rice.sh vieg"
 alias rice-harman="bash ~/switch-rice.sh harman"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/ichika/.lmstudio/bin"
+# End of LM Studio CLI section
+

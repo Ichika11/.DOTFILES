@@ -16,5 +16,6 @@ echo "source = ~/.local/share/ambxst/hyprland.conf" >> ~/.config/hypr/hyprland.c
 hyprctl reload
 sleep 2
 ambxst & disown
+~/.config/scripts/wal-watcher.sh &
 
 echo "done! ambxst restored"
