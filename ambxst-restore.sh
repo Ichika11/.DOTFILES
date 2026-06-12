@@ -1,6 +1,9 @@
 #!/bin/bash
 echo "restoring ambxst rice..."
 
+pkill -x qs 2>/dev/null
+pkill -f "src/ambxst/shell.qml" 2>/dev/null
+
 pkill swww-daemon
 pkill awww-daemon
 sleep 1
