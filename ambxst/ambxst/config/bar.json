@@ -7,8 +7,8 @@
         ]
     ],
     "containBar": false,
-    "enableFirefoxPlayer": true,
-    "frameEnabled": false,
+    "enableFirefoxPlayer": false,
+    "frameEnabled": true,
     "frameThickness": 8,
     "hoverRegionHeight": 8,
     "hoverToReveal": true,
@@ -19,11 +19,10 @@
     "launcherIconSize": 18,
     "launcherIconTint": true,
     "pillStyle": "default",
-    "pinnedOnStartup": false,
+    "pinnedOnStartup": true,
     "position": "top",
     "screenList": [
-        "eDP-1"
     ],
     "showPinButton": true,
-    "use12hFormat": true
+    "use12hFormat": false
 }
