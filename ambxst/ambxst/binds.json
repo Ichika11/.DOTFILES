@@ -15,9 +15,11 @@
             "action": {
                 "args": {
                 },
-                "id": "ambxst.clipboard"
+                "id": "ambxst.clipboard",
+                "layouts": [
+                ]
             },
-            "key": "V",
+            "key": "C",
             "modifiers": [
                 "SUPER"
             ]
@@ -189,9 +191,11 @@
             "action": {
                 "args": {
                 },
-                "id": "ambxst.tmux"
+                "id": "ambxst.tmux",
+                "layouts": [
+                ]
             },
-            "key": "T",
+            "key": "U",
             "modifiers": [
                 "SUPER"
             ]
@@ -1323,8 +1327,7 @@
                 {
                     "key": "V",
                     "modifiers": [
-                        "SUPER",
-                        "SHIFT"
+                        "SUPER"
                     ]
                 }
             ],
@@ -1346,7 +1349,7 @@
                     "key": "V",
                     "modifiers": [
                         "SUPER",
-                        "ALT"
+                        "SHIFT"
                     ]
                 }
             ],
@@ -2488,9 +2491,76 @@
             "enabled": true,
             "keys": [
                 {
-                    "key": "w",
+                    "key": "W",
                     "modifiers": [
                         "SHIFT",
+                        "SUPER"
+                    ]
+                }
+            ],
+            "name": ""
+        },
+        {
+            "actions": [
+                {
+                    "args": {
+                        "command": "bash ~/.config/scripts/rice-switcher.sh"
+                    },
+                    "id": "command.run",
+                    "layouts": [
+                    ]
+                }
+            ],
+            "enabled": true,
+            "keys": [
+                {
+                    "key": "T",
+                    "modifiers": [
+                        "SUPER",
+                        "SHIFT"
+                    ]
+                }
+            ],
+            "name": ""
+        },
+        {
+            "actions": [
+                {
+                    "args": {
+                        "command": "hyprctl dispatch fullscreen"
+                    },
+                    "id": "command.run",
+                    "layouts": [
+                    ]
+                }
+            ],
+            "enabled": true,
+            "keys": [
+                {
+                    "key": "F",
+                    "modifiers": [
+                        "SUPER"
+                    ]
+                }
+            ],
+            "name": ""
+        },
+        {
+            "actions": [
+                {
+                    "args": {
+                        "command": "hyprctl dispatch togglefloating"
+                    },
+                    "id": "command.run",
+                    "layouts": [
+                    ]
+                }
+            ],
+            "enabled": true,
+            "keys": [
+                {
+                    "key": "T",
+                    "modifiers": [
                         "SUPER"
                     ]
                 }
