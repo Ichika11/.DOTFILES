@@ -8,7 +8,7 @@
         "wallpaperEnabled": true
     },
     "bar": {
-        "persistent": false
+        "persistent": true
     },
     "dashboard": {
         "enabled": true,
