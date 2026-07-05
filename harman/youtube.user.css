@@ -28,7 +28,7 @@
 }}
 
 /* ── Global reset ─────────────────────────────────────────── */
-*, *::before, *::after {{
+ytd-thumbnail, ytd-thumbnail a, yt-img-shadow, img, video, .html5-video-player, yt-button-shape button, tp-yt-paper-button, ytd-button-renderer, yt-chip-cloud-chip-renderer, .ytChipShapeChip, .yt-spec-button-shape-next, #search-form, #container.ytd-searchbox, .ytSearchboxComponentInputBox, .ytSearchboxComponentSearchButton, .ytSearchboxComponentSearchButtonDark, ytd-watch-metadata, #description, ytd-text-inline-expander, ytd-comments, ytd-comment-thread-renderer, ytd-playlist-panel-renderer, ytd-playlist-panel-video-renderer, ytd-watch-next-secondary-results-renderer, #dismissible, tp-yt-paper-dialog, ytd-menu-popup-renderer, tp-yt-iron-dropdown, ytd-thumbnail-overlay-time-status-renderer, badge-shape, ytd-rich-grid-media {{
   border-radius: 0 !important;
   box-shadow:    none !important;
   text-shadow:   none !important;

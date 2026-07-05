@@ -9,3 +9,5 @@ if [ -f "$selected_path" ]; then
     awww img "$selected_path" --transition-type wipe --transition-duration 1
     wal -i "$selected_path" --saturate 1.0
 fi
+
+cp ~/.cache/wal/youtube.user.css /tmp/yt.tmp 2>/dev/null; mv /tmp/yt.tmp ~/.cache/wal/yt-stylus.user.css 2>/dev/null

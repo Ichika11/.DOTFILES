@@ -1,7 +1,5 @@
 {
     "appearance": {
-        "islands": false,
-        "pitchBlack": false,
         "transparency": {
             "enabled": true
         }
@@ -10,19 +8,10 @@
         "desktopClock": {
             "enabled": true
         },
-        "desktopLyrics": {
-            "enabled": true
-        },
-        "videoWallpaperMuteOnMedia": false,
-        "videoWallpaperPauseOnFullscreen": false,
-        "videoWallpaperPaused": false,
-        "videoWallpaperSoundEnabled": false,
         "visualiser": {
             "enabled": true
         },
-        "wallpaperEnabled": true,
-        "wallpaperRecolor": true,
-        "wallpaperRecolorStrength": 0.5046618009868421
+        "wallpaperEnabled": true
     },
     "bar": {
         "persistent": true
