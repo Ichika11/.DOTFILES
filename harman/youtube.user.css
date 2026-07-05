@@ -334,4 +334,88 @@ ytd-watch-next-secondary-results-renderer:hover {{
   outline-offset: -2px !important;
 }}
 
+
+/* --- polish: modern action buttons (like/share/ask/download) --- */
+.yt-spec-button-shape-next,
+button.yt-spec-button-shape-next,
+yt-button-view-model button,
+button-view-model button {{
+  background: var(--yt-panel) !important;
+  border: 1px solid var(--yt-line) !important;
+  color: var(--yt-text) !important;
+}}
+.yt-spec-button-shape-next:hover,
+yt-button-view-model button:hover,
+button-view-model button:hover {{
+  border-color: var(--yt-hot) !important;
+  outline: 2px solid var(--yt-hot) !important;
+  outline-offset: -2px !important;
+}}
+segmented-like-dislike-button-view-model,
+like-button-view-model,
+dislike-button-view-model,
+yt-button-view-model,
+button-view-model {{
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+}}
+
+/* --- polish: kill doubled borders from wrapper renderers --- */
+ytd-button-renderer,
+ytd-subscribe-button-renderer,
+ytd-menu-renderer,
+yt-icon-button {{
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+}}
+ytd-button-renderer:hover,
+ytd-subscribe-button-renderer:hover,
+ytd-menu-renderer:hover {{
+  border: 0 !important;
+  outline: 0 !important;
+}}
+
+/* --- polish: breathing room so buttons stop touching panel edges --- */
+#description,
+ytd-text-inline-expander {{
+  padding: 10px 14px !important;
+}}
+ytd-watch-metadata {{
+  padding: 12px !important;
+}}
+
+
+/* --- polish 2: square the pill action buttons --- */
+.yt-spec-button-shape-next,
+.yt-spec-button-shape-next *,
+.yt-spec-button-shape-next::before,
+.yt-spec-button-shape-next::after,
+yt-button-view-model button,
+button-view-model button,
+yt-touch-feedback-shape,
+yt-touch-feedback-shape *,
+segmented-like-dislike-button-view-model *,
+ytd-menu-renderer .yt-spec-button-shape-next {{
+  border-radius: 0 !important;
+}}
+/* segmented like/dislike: collapse the doubled middle edge */
+dislike-button-view-model button {{
+  border-left: 0 !important;
+}}
+
+/* --- polish 3: fuse like/dislike segments --- */
+segmented-like-dislike-button-view-model,
+segmented-like-dislike-button-view-model > *,
+segmented-like-dislike-button-view-model > * > * {{
+  gap: 0 !important;
+}}
+segmented-like-dislike-button-view-model [class*="ivider"],
+segmented-like-dislike-button-view-model [class*="eparator"] {{
+  display: none !important;
+}}
+dislike-button-view-model button {{
+  margin-left: -1px !important;
+}}
 }}
