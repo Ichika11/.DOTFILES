@@ -28,3 +28,5 @@ sleep 1
 caelestia scheme set --name dynamic 2>/dev/null
 
 echo "done! caelestia restored"
+pkill -f caelestia-wal-watcher 2>/dev/null
+~/.config/scripts/caelestia-wal-watcher.sh &

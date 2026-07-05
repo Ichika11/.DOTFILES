@@ -32,3 +32,4 @@ ambxst & disown
 ~/.config/scripts/wal-watcher.sh &
 
 echo "done! ambxst restored"
+pkill -f caelestia-wal-watcher 2>/dev/null

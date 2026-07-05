@@ -19,3 +19,4 @@ quickshell ipc call randomwallpaper apply "$WALL"
 wal -i "$WALL" --saturate 1.0
 
 echo "done! harman restored"
+pkill -f caelestia-wal-watcher 2>/dev/null

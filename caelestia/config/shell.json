@@ -1,11 +1,28 @@
 {
     "appearance": {
+        "islands": false,
+        "pitchBlack": false,
         "transparency": {
             "enabled": true
         }
     },
     "background": {
-        "wallpaperEnabled": true
+        "desktopClock": {
+            "enabled": true
+        },
+        "desktopLyrics": {
+            "enabled": true
+        },
+        "videoWallpaperMuteOnMedia": false,
+        "videoWallpaperPauseOnFullscreen": false,
+        "videoWallpaperPaused": false,
+        "videoWallpaperSoundEnabled": false,
+        "visualiser": {
+            "enabled": true
+        },
+        "wallpaperEnabled": true,
+        "wallpaperRecolor": true,
+        "wallpaperRecolorStrength": 0.5046618009868421
     },
     "bar": {
         "persistent": true
@@ -16,6 +33,10 @@
         "showOnHover": true
     },
     "launcher": {
+        "favouriteApps": [
+            "firefox",
+            "claude-desktop"
+        ],
         "maxWallpapers": 9,
         "showOnHover": false,
         "useFuzzy": {
@@ -31,6 +52,7 @@
         "defaultPlayer": "Mozilla firefox",
         "lyricsBackend": "LyricsBackend::Auto",
         "maxVolume": 1,
+        "smartScheme": true,
         "useFahrenheit": false
     },
     "sidebar": {

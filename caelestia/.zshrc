@@ -12,3 +12,4 @@ export PATH="$PATH:/home/ichika/.lmstudio/bin"
 # End of LM Studio CLI section
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
