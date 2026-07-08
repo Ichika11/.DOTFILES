@@ -658,4 +658,38 @@ button.ytp-button:hover {{
   outline: 2px solid var(--yt-hot) !important;
   outline-offset: -2px !important;
 }}
+
+/* --- polish 15: flatten account-menu inner boxes; square + highlight search suggestions --- */
+ytd-active-account-header-renderer,
+ytd-multi-page-menu-section-renderer {{
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  outline: 0 !important;
+}}
+.ytSearchboxComponentSuggestionsContainer,
+.ytSuggestionComponentSuggestion,
+.ytSuggestionComponentRoundedContainer {{
+  border-radius: 0 !important;
+}}
+.ytSuggestionComponentSuggestion {{
+  background: transparent !important;
+  color: var(--yt-text) !important;
+}}
+.ytSuggestionComponentSuggestion:hover,
+.ytSuggestionComponentSuggestion[aria-selected="true"] {{
+  background: var(--yt-panel) !important;
+  outline: 2px solid var(--yt-hot) !important;
+  outline-offset: -2px !important;
+}}
+
+/* --- polish 16: square the dropdown containers themselves --- */
+tp-yt-iron-dropdown,
+tp-yt-iron-dropdown #contentWrapper,
+tp-yt-iron-dropdown > *,
+ytd-multi-page-menu-renderer,
+ytd-menu-popup-renderer,
+ytd-popup-container * {{
+  border-radius: 0 !important;
+}}
 }}

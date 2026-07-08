@@ -6,8 +6,8 @@ while true; do
     if [ -n "$CUR" ] && [ "$CUR" != "$LAST" ]; then
         python3 - << 'PYEOF'
 import json, os
-BG_MIX = 0.5
-PANEL_MIX = 0.6
+BG_MIX = 0.1
+PANEL_MIX = 0.1
 p = os.path.expanduser("~/.local/state/caelestia/scheme.json")
 c = json.load(open(p))["colours"]
 def mix(a, b, t):
