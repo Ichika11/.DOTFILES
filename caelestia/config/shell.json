@@ -8,6 +8,7 @@
         "desktopClock": {
             "enabled": true
         },
+        "videoWallpaperPaused": false,
         "visualiser": {
             "enabled": true
         },
@@ -24,7 +25,8 @@
     "launcher": {
         "favouriteApps": [
             "firefox",
-            "claude-desktop"
+            "claude-desktop",
+            "vesktop"
         ],
         "maxWallpapers": 9,
         "showOnHover": false,

@@ -753,4 +753,20 @@ yt-list-view-model,
   outline: 3px solid var(--yt-hot) !important;
   outline-offset: -3px !important;
 }}
+
+/* --- polish 20: dropdown shell neutral; single ring per menu item --- */
+tp-yt-iron-dropdown,
+tp-yt-iron-dropdown #contentWrapper {{
+  background: transparent !important;
+  border: 0 !important;
+}}
+[class*="ytListItemViewModel"] [class*="ytListItemViewModel"],
+[class*="ytListItemViewModel"] [class*="ytListItemViewModel"]:hover {{
+  outline: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}}
+[class*="ytListItemViewModel"] .ytSpecTouchFeedbackShapeFill {{
+  background: transparent !important;
+}}
 }}
