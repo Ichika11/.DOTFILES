@@ -692,4 +692,42 @@ ytd-menu-popup-renderer,
 ytd-popup-container * {{
   border-radius: 0 !important;
 }}
+
+/* --- polish 17: square thumbnails (new component family) --- */
+yt-thumbnail-view-model,
+yt-thumbnail-view-model *,
+.yt-core-image,
+.ytCoreImageHost,
+[class*="ytThumbnailViewModel"],
+.ytSpecTouchFeedbackShape,
+.ytSpecTouchFeedbackShapeFill,
+ytd-rich-item-renderer img {{
+  border-radius: 0 !important;
+}}
+
+
+/* --- polish 18: kebab dropdown guts + kebab nudge --- */
+ytd-menu-popup-renderer,
+tp-yt-paper-listbox {{
+  background: var(--yt-panel) !important;
+  color: var(--yt-text) !important;
+}}
+ytd-menu-popup-renderer {{
+  border: 1px solid var(--yt-line) !important;
+}}
+ytd-menu-service-item-renderer,
+ytd-menu-navigation-item-renderer {{
+  background: transparent !important;
+  color: var(--yt-text) !important;
+}}
+ytd-menu-service-item-renderer yt-formatted-string,
+ytd-menu-service-item-renderer yt-icon {{
+  color: var(--yt-text) !important;
+}}
+/* nudge grid kebab left so its ring stays off the neighbor card */
+ytd-rich-grid-media #menu,
+ytd-rich-item-renderer #menu,
+yt-lockup-view-model [class*="menu-button"] {{
+  margin-right: 10px !important;
+}}
 }}
