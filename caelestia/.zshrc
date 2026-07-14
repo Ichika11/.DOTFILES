@@ -13,3 +13,6 @@ export PATH="$PATH:/home/ichika/.lmstudio/bin"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+
+alias banner="bash ~/.config/scripts/banner.sh"
+alias logo="bash ~/.config/scripts/logo.sh"
