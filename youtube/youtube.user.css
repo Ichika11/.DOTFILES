@@ -1952,4 +1952,37 @@ ytd-guide-entry-renderer tp-yt-paper-item {{
   padding-right: 14px !important;
 }}
 /* ==== end guide-rows ==== */
+
+/* ==== singlecol-reset ==== */
+/* phone-style watch layout: native flow, same as theater */
+ytd-watch-flexy[is-single-column] #columns,
+ytd-watch-flexy[full-bleed-player] #columns {{
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+  margin: 0 !important;
+  border: 0 !important;
+}}
+/* drawer push off in this mode too - scrim behaves like stock */
+ytd-app:has(tp-yt-app-drawer[opened]) ytd-watch-flexy[is-single-column] #columns {{
+  margin-left: 0 !important;
+}}
+/* ==== end singlecol-reset ==== */
+
+/* ==== drawer-host-fix ==== */
+/* host spans the whole viewport - must stay transparent, only the inner box is painted */
+tp-yt-app-drawer,
+tp-yt-app-drawer[opened] {{
+  background: transparent !important;
+  background-color: transparent !important;
+}}
+tp-yt-app-drawer #contentContainer {{
+  background-color: var(--yt-bg, {background}) !important;
+}}
+/* ==== end drawer-host-fix ==== */
 }}
